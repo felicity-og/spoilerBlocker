@@ -1,0 +1,25 @@
+{
+  "name": "Spoiler ALERT!",
+  "version": "1.0",
+  "description": "Want to be freed from unwanted spoilers, spoiling your favorite tv shows or movies before you get the chance to watch it!? We've got you!",
+  "manifest_version": 3,
+  "icons": {
+    "16":"16x16.png",
+    "32":"32x32.png",
+    "48":"48x48.png",
+    "128":"128x128.png"
+  },
+  "background":{
+    "service_worker": "serviceWorker.js"
+  },
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["scripting", "storage", "tabs"],
+  "options_ui":{
+    "page": "opt.html"
+  },
+  "action": {
+    "default_title": "block?",
+    "default_popup": "popup.html"
+  }
+
+}
